@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/23joshua/InTunetive.git"
+    "url": "git+https://github.com/23joshua/intonetiv.git"
   },
   "author": "Josue Chone",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/23joshua/InTunetive/issues"
+    "url": "https://github.com/23joshua/intonetiv/issues"
   },
-  "homepage": "https://github.com/23joshua/InTunetive#readme",
+  "homepage": "https://github.com/23joshua/InTunetiv#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
