@@ -1,0 +1,25 @@
+{
+  "name": "intunetive",
+  "version": "1.0.0",
+  "description": "criacao de site um sim sistema saaS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/23joshua/InTunetive.git"
+  },
+  "author": "Josue Chone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/23joshua/InTunetive/issues"
+  },
+  "homepage": "https://github.com/23joshua/InTunetive#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.49.9"
+  }
+}

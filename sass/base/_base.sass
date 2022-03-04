@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as *
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	// overflow-x: hidden
+
+body
+	font-family: 'Roboto', sans-serif	
+
+h2
+	font-size: 30px
+	// color: $blue_dark
+	font-weight: $weight_large
+	text-transform: uppercase
+
+p
+	line-height: 1.5
+	font-weight: $weight_xmedium		
+
+img
+	display: block
+	max-width: 100%
+	a
+		border: none
+		background-color: red
+
+ul
+	list-style: none
+
+a
+	text-decoration: none
+
+.container
+	margin: 0 auto
+	padding: 0 10px
+	width: $container
+	transition: $seconds	
+
+.transition	
+	transition-duration: $seconds
+	-moz-transition-duration: $seconds
+	-webkit-transition-duration: $seconds	
