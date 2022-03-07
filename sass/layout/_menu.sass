@@ -1,3 +1,16 @@
 @use '../abstracts/variables' as *
 @use '../abstracts/mixins' as *
 
+.header
+	.container
+		width: 100%
+		@include flex
+		padding: 7px 0px
+		align-items: center
+		background: red
+		justify-content: space-between
+	.logo
+		@include article(2, transparent, 0px, 10px)
+		a
+			text-transform: uppercase
+			font-weight: 700
