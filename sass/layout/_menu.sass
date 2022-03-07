@@ -2,15 +2,22 @@
 @use '../abstracts/mixins' as *
 
 .header
+	width: 100%
+	background: red
 	.container
-		width: 100%
 		@include flex
 		padding: 7px 0px
 		align-items: center
-		background: red
 		justify-content: space-between
 	.logo
 		@include article(2, transparent, 0px, 10px)
 		a
 			text-transform: uppercase
 			font-weight: 700
+	.nav
+		a
+			padding: 5px 10px
+			text-transform: capitalize		
+	.head-button
+		.contact
+			@include round(20px)		
