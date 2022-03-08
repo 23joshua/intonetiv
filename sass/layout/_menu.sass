@@ -1,23 +1,47 @@
 @use '../abstracts/variables' as *
 @use '../abstracts/mixins' as *
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint'
 
 .header
 	width: 100%
 	background: red
+	@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
+		width: 100%
 	.container
 		@include flex
 		padding: 7px 0px
 		align-items: center
 		justify-content: space-between
+		@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
+			@include article(12, transparent, 0px, 0px)
 	.logo
 		@include article(2, transparent, 0px, 10px)
 		a
 			text-transform: uppercase
 			font-weight: 700
+		@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
+			@include article(12, transparent, 0px, 0px)	
 	.nav
+		text-align: right
+		border: none
+		@include article(7, transparent, 0px, 10px)
 		a
 			padding: 5px 10px
-			text-transform: capitalize		
+			text-transform: capitalize	
+		@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
+			height: 50vh
+			border: none
+			text-align: left
+			@include article(12, blue, 0px, 0px)
+			a
+				color: $white
+				display: block	
+				padding: 15px 0px	
+				font-size: 2rem
 	.head-button
+		text-align: right
+		@include article(3, transparent, 0px, 10px)
 		.contact
-			@include round(20px)		
+			@include round(20px)
+		@include breakpoint($breakpoint_xxsmall $breakpoint_huge)			
+			@include article(12, blue, 0px, 0px)

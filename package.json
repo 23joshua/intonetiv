@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/23joshua/InTunetiv#readme",
   "devDependencies": {
+    "breakpoint": "^0.1.6",
+    "breakpoint-sass": "^2.7.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "gulp-watch": "^5.0.1",
