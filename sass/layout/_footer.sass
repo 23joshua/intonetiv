@@ -1,0 +1,130 @@
+@use '../abstracts/variables' as *
+@use '../abstracts/mixins' as *
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint'
+
+
+.footer
+	.newsletter
+		@include article(12, $white, 0px, 0px)
+		padding: 0px
+		.news-content
+			@include flex
+			padding: 70px 0px
+			align-items: center
+			flex-direction: row
+			justify-content: center
+			h2
+				width: 100%
+				font-size: 35px
+				font-weight: 100
+				text-align: center
+				font-family: $font_family
+			p
+				width: 100%
+				font-size: 16px
+				font-weight: 400
+				color: $gray_text
+				text-align: center
+				margin-bottom: 5px
+			.news-form
+				@include flex
+				align-items: center
+				justify-content: center
+				label
+					width: 368px
+					border: none
+					height: 48px
+					margin-right: 10px
+					position: relative
+					padding-left: 10px
+					@include round(10px)
+					background-color: #B0E3F4
+					&:focus-visible
+						border: none
+					input
+						height: 100%
+						width: 300px
+						padding: 5px 0px
+						border: none
+						background-color: #B0E3F4
+						border-radius-left-top: 15px
+						&:focus-visible
+							border: none
+					.icon
+						top: 6px
+						right: 10px
+						color: $gray_text	
+						font-size: 2rem	
+						position: absolute
+				.btn_news
+					@include round(50px)
+					font-weight: 400	
+					@include breakpoint(0px $breakpoint_xmedium)
+						margin-top: 10px	
+	.footer-menu	
+		@include article(12, $blue, 0px, 0px)
+		padding: 70px 0px
+		.footer-content
+			color: $white
+			@include flex
+			padding: 10px 0px
+			align-items: flex-start
+			font-family: $font_family
+			justify-content: space-between
+			.logo
+				padding: 0px
+				line-height: 1.3
+				@include article(12, $blue, 0px, 0px)
+				a
+					color: $white
+					font-weight: 900
+					text-align: left
+					font-size: 2rem
+					text-transform: uppercase
+			.footer-about,
+			.footer-pages,
+			.footer-services,
+			.footer-terms
+				a
+					color: $white
+					font-size: 16px
+					font-weight: 100
+					display: block
+					padding: 7px 0px
+					text-transform: capitalize
+					@include breakpoint(0px $breakpoint_xmedium)
+						font-size: 18px
+			.footer-pages,
+			.footer-services,
+			.footer-terms				
+				h2
+					font-size: 20px
+					font-weight: 300
+			.footer-about
+				@include article(5, transparent, 0px, 0px)
+				h2
+					font-size: 25px
+					font-weight: 300
+				@include breakpoint(0px $breakpoint_xmedium)
+					@include article(12, transparent, 10px, 0px)	
+			.footer-pages
+				@include article(2, transparent, 0px, 10px)
+			.footer-services		
+				@include article(3, transparent, 0px, 10px)
+			.footer-terms
+				@include article(2, transparent, 0px, 0px)
+			.footer-terms,
+			.footer-pages,
+			.footer-services	
+				@include breakpoint(0px $breakpoint_xmedium)
+					@include article(6, transparent, 0px, 0px)
+					padding: 0px
+	.footer-copy
+		@include article(12, #B0E3F4, 0px, 0px)
+		padding: 20px 0px
+		a
+			color: $gray_text
+			text-transform: capitalize
+			font-weight: 400
+			font-size: 1rem
+			text-align: left			

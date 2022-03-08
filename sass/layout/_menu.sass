@@ -4,44 +4,126 @@
 
 .header
 	width: 100%
-	background: red
+	background: #C9D6D8
 	@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
 		width: 100%
 	.container
 		@include flex
-		padding: 7px 0px
+		padding: 10px 0px
 		align-items: center
 		justify-content: space-between
 		@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
+			position: relative
 			@include article(12, transparent, 0px, 0px)
 	.logo
 		@include article(2, transparent, 0px, 10px)
+		padding: 0px
+		line-height: 2.2
 		a
+			color: $white
+			font-weight: 900
+			text-align: left
+			font-size: 1.2rem
 			text-transform: uppercase
-			font-weight: 700
 		@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
-			@include article(12, transparent, 0px, 0px)	
+			height: 70px
+			@include article(10, transparent, 0px, 0px)
+			padding: 0px	
+			a
+				font-size: 4rem
+				font-weight: 900
+		@include breakpoint($breakpoint_medium $breakpoint_huge)
+			line-height: 1.5	
+			a
+				font-size: 3rem	
+		@include breakpoint($breakpoint_xxsmall $breakpoint_xmedium)
+			a
+				font-size: 2rem	
+		@include breakpoint(0px $breakpoint_xxsmall)
+			height: 50px
+			a
+				font-size: 1.5rem	
+	div			
+		.icon
+			top: 0
+			right: 16px
+			height: 60px
+			color: $white
+			display: none
+			font-size: 6rem
+			text-align: center
+			position: absolute	
+			@include article(2, transparent, auto, 0px)
+			@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
+				display: block	
+			@include breakpoint($breakpoint_medium $breakpoint_huge)
+				top: -14px		
+			@include breakpoint($breakpoint_xxsmall $breakpoint_xmedium)
+				font-size: 4rem		
+			@include breakpoint(0px $breakpoint_xxsmall)
+				top: 0px
+				right: 36px
+				font-size: 3.5rem	
 	.nav
 		text-align: right
 		border: none
 		@include article(7, transparent, 0px, 10px)
 		a
 			padding: 5px 10px
-			text-transform: capitalize	
+			text-transform: capitalize
+			font-weight: 700
+			color: $gray_nav
+			font-family: $nav_text	
 		@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
 			height: 50vh
+			left: -100%
+			top: 80px
 			border: none
 			text-align: left
+			position: absolute
 			@include article(12, blue, 0px, 0px)
 			a
 				color: $white
 				display: block	
-				padding: 15px 0px	
 				font-size: 2rem
+				font-weight: 700
+				padding: 15px 0px	
+				font-family: $font_family
+		@include breakpoint($breakpoint_medium $breakpoint_huge)
+			top: 90px	
+		@include breakpoint($breakpoint_xxsmall $breakpoint_xmedium)
+			a
+				font-size: 1.3rem
+		@include breakpoint(0px $breakpoint_xxsmall)
+			top: 70px
+			a
+				padding: 10px 0px	
+				font-weight: 400
+				font-size: 1.1rem			
 	.head-button
 		text-align: right
 		@include article(3, transparent, 0px, 10px)
 		.contact
 			@include round(20px)
-		@include breakpoint($breakpoint_xxsmall $breakpoint_huge)			
+			color: $white
+			font-weight: 400
+		@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
+			border: none	
+			position: absolute
+			top: 50vh
+			left: -100%		
 			@include article(12, blue, 0px, 0px)
+			padding: 20px
+			.contact
+				font-size: 1.8rem
+				padding: 20px 60px
+				@include round(100px)
+		@include breakpoint($breakpoint_xxsmall $breakpoint_xmedium)
+			.contact
+				font-size: 1.2rem
+				padding: 12px 25px	
+		@include breakpoint(0px $breakpoint_xxsmall)
+			padding: 10px	
+			.contact
+				font-size: 1rem
+				padding: 10px 16px		

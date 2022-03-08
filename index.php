@@ -5,6 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>InTunetive SaaS</title>
+	<link rel="icon" type="image/png" href=""/>
+	<link href="https://file.myfontastic.com/4okThjwthUnpxYVHQbxJbC/icons.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/boot.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
@@ -13,6 +15,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="logo"><a href="">logo</a></div>
+			<div><span class="icon"><ion-icon name="menu-outline"></ion-icon></span></div>
 			<nav class="nav">
 				<a href="./">home</a>
 				<a href="?file=about">about</a>
@@ -40,7 +43,58 @@
 	</main>
 
 	<footer class="footer">
-		
+		<div class="newsletter">
+			<div class="container">
+				<div class="news-content">
+					<h2>Newsletter</h2><br>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+					<div class="news-form">
+						<label>
+							<input type="" name="" placeholder="Your email">
+							<span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+						</label>
+						<a href="" class="btn btn_blue btn_big btn_news">Subscribe</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-menu">
+			<div class="container">
+				<div class="footer-content">
+					<div class="logo"><a href="">logo</a></div>
+					<div class="footer-about">
+						<h2>about</h2>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quisquam cum non quis beatae aliquam, fugiat, eligendi consequuntur, obcaecati, natus earum illo.</p>
+					</div>
+					<div class="footer-pages">
+						<h2>menu</h2>
+						<a href="./">home</a>
+						<a href="?file=about">about</a>
+						<a href="?file=blog">blog</a>
+					</div>
+					<div class="footer-services">
+						<h2>services</h2>
+						<a href="">Lorem, ipsum dolor.</a>
+						<a href="">Lorem, ipsum.</a>
+						<a href="">Lorem ipsum, dolor sit.</a>
+						<a href="">Lorem, ipsum, dolor.</a>
+						<a href="">Lorem, ipsum.</a>
+					</div>
+					<div class="footer-terms">
+						<h2>terms</h2>
+						<a href="">terms & Conditions</a>
+						<a href="">Terms of Use</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copy">
+			<div class="container">
+				<a href="" class="copy">&copy 2022. all rights reserved</a>
+			</div>
+		</div>
 	</footer>
 </body>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
