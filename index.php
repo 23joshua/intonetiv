@@ -43,6 +43,20 @@
 	</main>
 
 	<footer class="footer">
+		<div class="media-social">
+			<div class="container">
+				<div class="social-content">
+					<div class="media">
+						<a href="" class="icon"><ion-icon name="logo-facebook"></ion-icon></a>
+						<a href="" class="icon"><ion-icon name="logo-instagram"></ion-icon></a>
+						<a href="" class="icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+						<a href="" class="icon"><ion-icon name="logo-twitter"></ion-icon></a>
+					</div>
+					<h2>follow us on our social networks</h2>
+					<p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit.</p>
+				</div>
+			</div>
+		</div>
 		<div class="newsletter">
 			<div class="container">
 				<div class="news-content">

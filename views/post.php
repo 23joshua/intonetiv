@@ -2,7 +2,7 @@
 	<figure>
 		<a href="?file=blog-post"><img src="assets/img/blog-post.jpg"></a>
 		<figcaption>
-			<a href="" class="category-post">category name | name</a>
+			<a href="" class="category-post">category name | data</a>
 		</figcaption>
 	</figure>
 	<a href="?file=blog-post"><h1>Lorem ipsum dolor sit, amet consectetur.</h1></a>

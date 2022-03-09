@@ -4,6 +4,39 @@
 
 
 .footer
+	.media-social
+		@include article(12, #B0E3F4, 0px, 0px)
+		padding: 0px
+		.social-content
+			@include flex
+			color: $gray_text
+			align-items: center
+			justify-content: center
+			.media
+				width: 100%
+				@include flex
+				align-items: center
+				padding: 100px 0px 25px 0px
+				justify-content: center
+				.icon
+					@include flex
+					color: #B0E3F4
+					margin: 0px 5px
+					font-size: 1.5rem
+					background: $white
+					align-items: center
+					justify-content: center
+					@include round_content(40px, true)
+			h2
+				width: 100%
+				font-size: 26px
+				font-weight: 100
+				text-align: center
+				padding-bottom: 15px
+			p
+				font-size: 16px
+				font-weight: 100
+				margin-bottom: 100px	
 	.newsletter
 		@include article(12, $white, 0px, 0px)
 		padding: 0px
