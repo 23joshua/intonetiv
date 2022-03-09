@@ -14,7 +14,7 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="logo"><a href="">logo</a></div>
+			<div class="logo"><a href="./">InTunetive</a></div>
 			<div><span class="icon"><ion-icon name="menu-outline"></ion-icon></span></div>
 			<nav class="nav">
 				<a href="./">home</a>
@@ -61,7 +61,7 @@
 		<div class="footer-menu">
 			<div class="container">
 				<div class="footer-content">
-					<div class="logo"><a href="">logo</a></div>
+					<div class="logo"><a href="./">InTunetive</a></div>
 					<div class="footer-about">
 						<h2>about</h2>
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quisquam cum non quis beatae aliquam, fugiat, eligendi consequuntur, obcaecati, natus earum illo.</p>

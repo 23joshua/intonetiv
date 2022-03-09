@@ -1,4 +1,36 @@
 @use '../abstracts/variables' as *
 @use '../abstracts/mixins' as *
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint'
 
-
+.blog-container
+	@include flex
+	align-items: center
+	justify-content: space-between
+	@include article(12, transparent, 10px, 10px)
+	padding: 0px
+	.post
+		@include article(3, transparent, 10px, 10px)
+		padding: 0px
+		a
+			color: $gray_text
+		figure
+			width: 100%
+			height: 370px
+			img
+				width: 100%
+				height: 234px
+			figcaption
+				.category-post
+					font-size: 14px
+					font-weight: 700
+					margin: 10px 0px 20px 0px
+					font-family: $font_family	
+		h1
+			font-size: 27px
+			font-weight: 100		
+			margin-bottom: 25px	
+			font-family: $font-family
+		p
+			font-size: 16px
+			font-weight: 100
+			font-family: $font-family	

@@ -1,4 +1,9 @@
 @use '../abstracts/variables' as *
 @use '../abstracts/mixins' as *
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint'
 
-	
+
+.banner
+	width: 100%
+	height: 100vh
+	@include background_image("banner-home.jpg")	
