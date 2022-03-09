@@ -1,3 +1,166 @@
 @use '../abstracts/variables' as *
 @use '../abstracts/mixins' as *
 @import '../node_modules/breakpoint-sass/stylesheets/breakpoint'
+
+.blog-post
+	width: 700px
+	color: #000
+	margin: 50px auto
+	.category-post
+		font-size: 18px
+		font-weight: 400
+		color: $gray_text
+		margin: 20px 0px 20px 0px
+		font-family: $font_family	
+		text-transform: capitalize
+	h1
+		font-size: 45px
+		font-weight: 100
+		color: $gray_text
+		margin-bottom: 20px
+	.author-name
+		@extend .category-post
+		font-size: 14px
+		margin-bottom: 20px	
+		font-weight: 300
+	p
+		font-size: 20px
+		font-weight: 300
+		margin: 15px 0px	
+	.like-post
+		width: 100%
+		@include flex
+		align-items: center
+		margin-bottom: 40px
+		padding: 40px 0px 20px 0px
+		border-bottom: 1px solid #B0E3F4
+		justify-content: space-between
+		.icon-heart
+			width: 200px
+			@include flex
+			font-size: 1rem
+			font-weight: 400
+			color: $gray_text
+			align-items: center
+			justify-content: flex-start
+			text-transform: capitalize
+			span
+				@include flex
+				color: $white
+				font-size: 1.5rem
+				margin-right: 10px
+				align-items: center
+				background: #4FC0E8
+				justify-content: center
+				@include round_content(40px, true)
+		.social-post
+			@include flex
+			align-items: center
+			justify-content: flex-end
+			.icon
+				color: $gray_text
+				padding: 0 10px
+				font-size: 1.5rem
+	.comment-post
+		width: 100%
+		position: relative
+		margin-bottom: 70px
+		.comments
+			margin-bottom: 70px
+			h3
+				font-size: 27
+				font-weight: 100
+				padding-bottom: 20px
+			textarea
+				width: 100%
+				border: none
+				height: 160px
+				padding: 10px
+				font-size: 16px
+				font-weight: 100
+				color: $gray_text
+				background: #B0E3F4	
+				@include round(10px)
+				text-transform: capitalize
+			.btn_submit
+				top: 215px
+				right: 0px
+				position: absolute
+				@include round(50px)	
+		.comments-response
+			width: 100%
+			margin: 20px 0px
+			figure
+				@include flex
+				align-items: center
+				justify-content: flex-start
+				img
+					@include round_content(60px, true)	
+				figcaption
+					margin-left: 20px
+					span
+						font-size: 16px		
+						font-weight: 400
+						text-transform: capitalize
+			p
+				text-align: left
+				font-size: 16px
+				font-weight: 300
+				margin: 10px 0px
+				margin-left: 20px
+			.comments-like
+				text-align: right	
+				.icon
+					font-size: 1.2rem
+					color: $gray_text
+					padding: 0px 10px	
+.next-previous
+	width: 100%
+	height: 286px
+	background: #4FC0E8
+	.next-previous-container
+		width: 700px
+		height: 100%
+		@include flex
+		margin: auto auto
+		align-items: center
+		justify-content: center
+		.next-previous-content
+			width: 100%
+			@include flex
+			margin-top: 60px
+			align-items: center
+			justify-content: space-between
+			.next,
+			.previous
+				@include article(4, transparent, 0px, 0px)
+				a
+					color: $white	
+					display: block
+					font-size: 27px
+					font-weight: 100
+					text-transform: lowercase
+				.icon
+					@include flex
+					font-weight: 400
+					align-items: center
+					text-transform: capitalize
+					ion-icon
+						font-size: 1.5rem	
+					span
+						font-size: 18px
+						font-weight: 300
+			.previous	
+				a
+					text-align: left
+					span		
+						margin-left: 15px
+				.icon
+					justify-content: flex-start		
+			.next
+				a
+					text-align: right	
+					span
+						margin-right: 15px	
+				.icon
+					justify-content: flex-end									
