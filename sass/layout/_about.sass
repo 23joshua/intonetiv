@@ -1,0 +1,100 @@
+@use '../abstracts/variables' as *
+@use '../abstracts/mixins' as *
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint'
+
+.about
+	width: 700px
+	margin: 0px auto
+	padding: 40px 0px
+	h2
+		font-size: 45px
+		font-weight: 100
+		text-align: center
+		margin-bottom: 10px
+		text-transform: capitalize
+	p
+		font-size: 16px
+		font-weight: 300
+		text-align: center
+		margin-bottom: 10px
+.meet-leaders
+	width: 100%
+	background: #B0E3F4
+	padding: 100px 0px
+	@extend .about
+	p
+		margin-bottom: 30px
+	.meet
+		width: 80%
+		@include flex
+		margin: 0px auto
+		align-items: center
+		flex-direction: row
+		justify-content: center
+		figure
+			@include flex
+			align-items: center
+			flex-direction: column
+			justify-content: center
+			@include article(3, transparent, 10px, 10px)
+			padding: 0px
+			img
+				@include round_content(150px, true)
+			figcaption
+				text-align: center
+				text-transform: capitalize
+				p
+					font-size: 22px
+					font-weight: 100
+					margin-bottom: 0px	
+				.name-office
+					margin-top: -15px
+					margin-bottom: 7px
+				.media
+					.icon
+						font-size: 1rem
+						color: $gray_text			
+.container
+	.questions
+		@extend .meet-leaders
+		background: none
+		p
+			margin-bottom: 70px
+		.questions-content
+			width: 700px
+			@include flex
+			margin: 0px auto
+			align-items: center
+			margin-bottom: 20px
+			padding-bottom: 10px
+			justify-content: space-between
+			border-bottom: 1px solid #B0E3F4
+			.questions-title
+				color: $gray_text
+				h4
+					font-size: 18px
+					font-weight: 700
+					text-transform: capitalize
+				p
+					font-size: 16px
+					font-weight: 300
+					text-align: left
+					margin-bottom: 0px
+			.questions-icon
+				@include flex
+				font-size: 2rem
+				align-items: center
+				justify-content: center
+				.icon			
+					color: $gray_text
+			.questions-response
+				padding: 20px
+				display: none
+				background: #EBF8FC
+				@include round(10px)
+				p	
+					font-size: 16px
+					text-align: left
+					font-weight: 300
+					color: $gray_text
+					margin-bottom: 0px

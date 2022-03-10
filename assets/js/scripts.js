@@ -1,0 +1,1 @@
+$((function(){$("[data-modal]").click((function(a){a.preventDefault();var t=$(this).data("modal");$(t).fadeIn(200).css("display","flex")})),$(".j_modal_close").click((function(a){a.preventDefault(),$(a.target).hasClass("j_modal_close")&&$(".j_modal_close").fadeOut(200);var t=$(this).find("iframe");t&&t.attr("src",t.attr("src"))}))}));

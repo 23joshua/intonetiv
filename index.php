@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>InTunetive SaaS</title>
 	<link rel="icon" type="image/png" href=""/>
-	<link href="https://file.myfontastic.com/4okThjwthUnpxYVHQbxJbC/icons.css" rel="stylesheet">
+	
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/boot.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
@@ -111,4 +111,6 @@
 </body>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
 </html>

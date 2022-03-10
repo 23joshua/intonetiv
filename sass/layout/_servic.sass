@@ -1,3 +1,33 @@
 @use '../abstracts/variables' as *
 @use '../abstracts/mixins' as *
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint'
 
+.servic
+	width: 90%
+	@include flex
+	margin: 0px auto
+	padding: 100px 0px
+	align-items: center
+	justify-content: center
+	h2
+		width: 100%
+		font-size: 45px
+		font-weight: 100
+		text-align: center
+		margin-bottom: 50px
+		text-transform: capitalize
+	.servix-content
+		text-align: center
+		@include article(4, transparent, 0px, 10px)
+		padding: 0px
+		.icon
+			font-size: 1.5rem
+			color: $gray_text
+			padding-bottom: 15px
+		h3
+			font-size: 25px
+			font-weight: 100
+			padding-bottom: 15px
+		p
+			font-size: 16px
+			font-weight: 100			

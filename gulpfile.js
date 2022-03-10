@@ -18,7 +18,7 @@ function compilescss() {
 
 //optimize and move images
 function optimizeimg() {
-  return src('sass/image/*.{jpg,png}') // change to your source directory
+  return src('sass/img/*.{jpg,png}') // change to your source directory
     .pipe(imagemin([
       imagemin.mozjpeg({ quality: 80, progressive: true }),
       imagemin.optipng({ optimizationLevel: 5 }),
