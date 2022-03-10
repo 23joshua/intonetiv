@@ -17,9 +17,9 @@
 			<div class="logo"><a href="./">InTunetive</a></div>
 			<div><span class="icon"><ion-icon name="menu-outline"></ion-icon></span></div>
 			<nav class="nav">
-				<a href="./">home</a>
-				<a href="?file=about">about</a>
-				<a href="?file=blog">blog</a>
+				<a href="./" class="transition">home</a>
+				<a href="?file=about" class="transition">about</a>
+				<a href="?file=blog" class="transition">blog</a>
 			</nav>
 			<div class="head-button">
 				<a href="" class="btn btn_blue contact">contacto</a>

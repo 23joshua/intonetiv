@@ -1,0 +1,94 @@
+@use '../abstracts/variables' as *
+@use '../abstracts/mixins' as *
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint'
+
+.banner
+	top: 0
+	left: 0
+	right: 0
+	height: 100vh
+	// z-index: -2
+	position: absolute
+	background: rgba(0, 0, 0, 0.5)
+	&:after
+		content: ""
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		z-index: -3
+		position: absolute
+		@include background_image('banner.jpg')
+		background-attachment: fixed
+	.banner-content
+		width: 700px
+		height: 50vh
+		margin: 185px auto 0px auto
+		@include flex
+		align-items: center
+		justify-content: center
+		h1
+			color: #fff
+			font-size: 45px
+			font-weight: 900
+			margin-bottom: 20px
+			text-align: center
+		p
+			color: #999
+			font-size: 18px
+			font-weight: 700	
+			margin-bottom: 40px
+			text-align: center
+		.btn-banner
+			@include flex
+			font-weight: 700
+			align-items: center
+			@include round(50px)
+			padding: 18px 28px	
+			justify-content: center
+			ion-icon
+				font-weight: 400
+				font-size: 2rem
+				padding-right: 0px 10px
+.solutions
+	width: 100%
+	@include flex
+	margin: 50px auto
+	align-items: center
+	margin-top: 710px
+	justify-content: center
+	h2
+		width: 100%
+		font-size: 45px
+		font-weight: 100
+		text-align: center
+		margin-bottom: 10px
+		text-transform: capitalize
+	p
+		width: 100%
+		font-size: 16px
+		font-weight: 300
+		text-align: center
+		margin-bottom: 50px
+	.solutions-content	
+		text-align: center
+		border-top: 3px solid $white
+		@include article(4, transparent, 0px, 20px)
+		&:hover
+			padding: 10px
+			box-shadow: $shadow
+			@include round(7px)
+			border-top: 3px solid #4FC0E8
+		img
+			margin: 40px auto 40px auto	
+			width: 60%
+		h3
+			font-size: 25px
+			font-weight: 100
+			padding-bottom: 15px
+		p
+			font-size: 16px
+			font-weight: 100
+			margin-bottom: 40px	
