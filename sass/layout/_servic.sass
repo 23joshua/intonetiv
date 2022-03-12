@@ -20,6 +20,10 @@
 		text-align: center
 		@include article(4, transparent, 0px, 10px)
 		padding: 0px
+		@include breakpoint($breakpoint_medium $breakpoint_huge)
+			@include article(6, transparent, 20px, 20px)
+		@include breakpoint(0px $breakpoint_xmedium)
+			@include article(12, transparent, 20px, 0px)	
 		.icon
 			font-size: 1.5rem
 			color: $gray_text

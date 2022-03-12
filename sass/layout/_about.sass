@@ -4,19 +4,25 @@
 
 .about
 	width: 700px
-	margin: 0px auto
+	margin: 90px auto 0px auto
 	padding: 40px 0px
+	@include breakpoint(0px $breakpoint_xmedium)
+		width: 100%
 	h2
 		font-size: 45px
 		font-weight: 100
 		text-align: center
 		margin-bottom: 10px
 		text-transform: capitalize
+		@include breakpoint(0px $breakpoint_xmedium)
+			margin-bottom: 20px
 	p
 		font-size: 16px
 		font-weight: 300
 		text-align: center
 		margin-bottom: 10px
+		@include breakpoint(0px $breakpoint_xmedium)
+			margin-bottom: 20px
 .meet-leaders
 	width: 100%
 	background: #B0E3F4
@@ -38,6 +44,8 @@
 			justify-content: center
 			@include article(3, transparent, 10px, 10px)
 			padding: 0px
+			@include breakpoint(0px $breakpoint_xmedium)
+				@include article(12, transparent, 10px, 0px)
 			img
 				@include round_content(150px, true)
 			figcaption
@@ -69,8 +77,12 @@
 			padding-bottom: 10px
 			justify-content: space-between
 			border-bottom: 1px solid #B0E3F4
+			@include breakpoint(0px $breakpoint_xmedium)
+				width: 100%
 			.questions-title
 				color: $gray_text
+				@include breakpoint(0px $breakpoint_xmedium)
+					@include article(10, transparent, 0px, 5px)
 				h4
 					font-size: 18px
 					font-weight: 700
@@ -85,6 +97,8 @@
 				font-size: 2rem
 				align-items: center
 				justify-content: center
+				@include breakpoint(0px $breakpoint_xmedium)
+					@include article(2, transparent, 0px, 5px)
 				.icon			
 					color: $gray_text
 			.questions-response

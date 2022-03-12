@@ -5,7 +5,9 @@
 .blog-post
 	width: 700px
 	color: #000
-	margin: 50px auto
+	margin: 90px auto 50px auto
+	@include breakpoint(0px $breakpoint_xmedium)
+		@include article(12, transparent, 20px, 0px)
 	.category-post
 		font-size: 18px
 		font-weight: 400
@@ -18,6 +20,9 @@
 		font-weight: 100
 		color: $gray_text
 		margin-bottom: 20px
+		@include breakpoint(0px $breakpoint_xmedium)
+			text-align: center
+			margin-top: 20px
 	.author-name
 		@extend .category-post
 		font-size: 14px
@@ -118,49 +123,57 @@
 	width: 100%
 	height: 286px
 	background: #4FC0E8
-	.next-previous-container
-		width: 700px
-		height: 100%
+	.container
 		@include flex
-		margin: auto auto
+		height: 100%
 		align-items: center
 		justify-content: center
-		.next-previous-content
-			width: 100%
+		.next-previous-container
+			width: 700px
+			height: 100%
 			@include flex
-			margin-top: 60px
-			align-items: center
-			justify-content: space-between
-			.next,
-			.previous
-				@include article(4, transparent, 0px, 0px)
-				a
-					color: $white	
-					display: block
-					font-size: 27px
-					font-weight: 100
-					text-transform: lowercase
-				.icon
-					@include flex
-					font-weight: 400
-					align-items: center
-					text-transform: capitalize
-					ion-icon
-						font-size: 1.5rem	
-					span
-						font-size: 18px
-						font-weight: 300
-			.previous	
-				a
-					text-align: left
-					span		
-						margin-left: 15px
-				.icon
-					justify-content: flex-start		
-			.next
-				a
-					text-align: right	
-					span
-						margin-right: 15px	
-				.icon
-					justify-content: flex-end									
+			margin: 0px auto
+			@include breakpoint(0px $breakpoint_xmedium)
+				@include article(12, transparent, 0px, 0px)
+			.next-previous-content
+				width: 100%
+				@include flex
+				align-items: center
+				justify-content: space-between
+				@include breakpoint(0px $breakpoint_xmedium)
+					margin-top: 0px
+				.next,
+				.previous
+					@include article(6, transparent, 0px, 0px)
+					a
+						color: $white	
+						display: block
+						font-size: 27px
+						font-weight: 100
+						text-transform: lowercase
+						@include breakpoint(0px $breakpoint_xmedium)
+							font-size: 18px
+					.icon
+						@include flex
+						font-weight: 400
+						align-items: center
+						text-transform: capitalize
+						ion-icon
+							font-size: 1.5rem	
+						span
+							font-size: 18px
+							font-weight: 300
+				.previous	
+					a
+						text-align: left
+						span		
+							margin-left: 15px
+					.icon
+						justify-content: flex-start		
+				.next
+					a
+						text-align: right	
+						span
+							margin-right: 15px	
+					.icon
+						justify-content: flex-end									

@@ -22,36 +22,50 @@
 		position: absolute
 		@include background_image('banner.jpg')
 		background-attachment: fixed
-	.banner-content
-		width: 700px
-		height: 50vh
-		margin: 185px auto 0px auto
+	.container
 		@include flex
+		height: 100vh
 		align-items: center
 		justify-content: center
-		h1
-			color: #fff
-			font-size: 45px
-			font-weight: 900
-			margin-bottom: 20px
-			text-align: center
-		p
-			color: #999
-			font-size: 18px
-			font-weight: 700	
-			margin-bottom: 40px
-			text-align: center
-		.btn-banner
+		.banner-content
+			width: 700px
+			height: 50vh
 			@include flex
-			font-weight: 700
 			align-items: center
-			@include round(50px)
-			padding: 18px 28px	
 			justify-content: center
-			ion-icon
-				font-weight: 400
-				font-size: 2rem
-				padding-right: 0px 10px
+			@include breakpoint($breakpoint_medium $breakpoint_huge)
+				height: 26vh
+			h1
+				color: #fff
+				font-size: 45px
+				font-weight: 900
+				margin-bottom: 20px
+				text-align: center
+				@include breakpoint($breakpoint_medium $breakpoint_huge)
+					font-size: 50px
+					margin-bottom: 10px
+				@include breakpoint(0px $breakpoint_xmedium)
+					font-size: 42px	
+			p
+				color: #999
+				font-size: 18px
+				font-weight: 700	
+				margin-bottom: 40px
+				text-align: center
+				@include breakpoint($breakpoint_medium $breakpoint_huge)
+					font-size: 22px
+					margin-bottom: 10px
+			.btn-banner
+				@include flex
+				font-weight: 700
+				align-items: center
+				@include round(50px)
+				padding: 18px 28px	
+				justify-content: center
+				ion-icon
+					font-weight: 400
+					font-size: 2rem
+					padding-right: 0px 10px
 .solutions
 	width: 100%
 	@include flex
@@ -59,6 +73,14 @@
 	align-items: center
 	margin-top: 710px
 	justify-content: center
+	@include breakpoint($breakpoint_medium $breakpoint_huge)
+		margin-top: 1450px
+	@include breakpoint($breakpoint_medium $breakpoint_large)
+		margin-top: 1250px
+	@include breakpoint(0px $breakpoint_xmedium)
+		margin-top: 760px	
+	@include breakpoint($breakpoint_small 414px)
+		margin-top: 920px	
 	h2
 		width: 100%
 		font-size: 45px
@@ -81,6 +103,10 @@
 			box-shadow: $shadow
 			@include round(7px)
 			border-top: 3px solid #4FC0E8
+		@include breakpoint($breakpoint_medium $breakpoint_huge)
+			@include article(6, transparent, 20px, 20px)	
+		@include breakpoint(0px $breakpoint_medium)
+			@include article(12, transparent, 10px, 0px)		
 		img
 			margin: 40px auto 40px auto	
 			width: 60%
