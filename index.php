@@ -22,7 +22,7 @@
 				<a href="?file=blog" class="transition">blog</a>
 			</nav>
 			<div class="head-button">
-				<a href="" class="btn btn_blue contact">contacto</a>
+				<!-- <a href="" class="btn btn_blue contact">contacto</a> -->
 			</div>
 		</div>
 	</header>

@@ -43,13 +43,27 @@
 		?>
 	</section>
 </div>	
-<section class="video">
+<section class="contact">
 	<div class="container">
-		<?php  
-
-			require __DIR__ . "./video.php";
-
-		?>
+		<div class="contact-content">
+			<div class="contact-form">
+				<h2>Get In Touch</h2>
+				<p><ion-icon name="location-outline"></ion-icon> maputo cidade,  nº 1223</p>
+				<p><ion-icon name="call-outline"></ion-icon> +258 87 69 93 883</p>
+				<p><ion-icon name="phone-portrait-outline"></ion-icon> +258 84 43 06 999</p>
+				<form method="" enctype="" action="">
+					<input type="" name="" value="" placeholder="nome competo">
+					<input type="email" name="" value="" placeholder="e-mail">
+					<textarea>
+						Write your message here
+					</textarea>
+					<a href="" class="btn btn_big btn_blue btn-contact">send</a>
+				</form>
+			</div>
+			<div class="contact-photo">
+				<img src="assets/img/undraw_Personal.png" alt="">
+			</div>
+		</div>
 	</div>
 </section>
 <div class="container">	

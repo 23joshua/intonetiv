@@ -8,9 +8,14 @@
 
 <div class="container">
 	<article class="blog-post">
-		<a href="" class="category-post">category name | data</a>
+		<figure>
+			<a href="" class="category-post">category name | data</a>
+			<a href="?file=blog-post"><img src="assets/img/blog-post.jpg"></a>
+			<figcaption>
+				<a href="" class="author-name">Write by author name</a>
+			</figcaption>
+		</figure> 
 		<h1>What is the Ideal Design Workflow for UX/UI Designers?</h1>
-		<a href="" class="author-name">Write by author name</a>
 
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
 		invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
@@ -36,6 +41,8 @@
 		sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
 		gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
+		<p><img src="assets/img/blog-post.jpg"></p>
+
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
 		invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
 		accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
@@ -44,12 +51,16 @@
 		sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
 		gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
+
+
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
 		invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
 		accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
 		sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing 
 		elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
 		sed diam voluptua.</p> 
+
+
 
 		<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
 		takimata sanctus est Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consetetur 

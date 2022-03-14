@@ -8,13 +8,29 @@
 	margin: 90px auto 50px auto
 	@include breakpoint(0px $breakpoint_xmedium)
 		@include article(12, transparent, 20px, 0px)
-	.category-post
-		font-size: 18px
-		font-weight: 400
-		color: $gray_text
-		margin: 20px 0px 20px 0px
-		font-family: $font_family	
-		text-transform: capitalize
+		margin-top: 100px
+	figure
+		width: 100%	
+		margin-bottom: 30px
+		.category-post
+			font-size: 18px
+			font-weight: 400
+			color: $gray_text
+			margin: 20px 0px 20px 0px
+			font-family: $font_family	
+			text-transform: capitalize
+		a
+			img
+				width: 100%
+				height: auto
+				margin: 20px 0px
+				@include round(20px)	
+		figcaption	
+			.author-name
+				@extend .category-post
+				font-size: 14px
+				margin-bottom: 20px	
+				font-weight: 300
 	h1
 		font-size: 45px
 		font-weight: 100
@@ -22,16 +38,18 @@
 		margin-bottom: 20px
 		@include breakpoint(0px $breakpoint_xmedium)
 			text-align: center
-			margin-top: 20px
-	.author-name
-		@extend .category-post
-		font-size: 14px
-		margin-bottom: 20px	
-		font-weight: 300
+			margin-top: 20px	
 	p
 		font-size: 20px
 		font-weight: 300
-		margin: 15px 0px	
+		margin: 15px 0px
+	img
+		width: 100%
+		height: auto
+		margin: 10px 0px
+		@include round(20px)	
+		@include breakpoint(0px $breakpoint_xmedium)
+			height: auto
 	.like-post
 		width: 100%
 		@include flex

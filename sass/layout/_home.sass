@@ -118,3 +118,75 @@
 			font-size: 16px
 			font-weight: 100
 			margin-bottom: 40px	
+.contact
+	width: 100%
+	height: 500px
+	background: #EBF8FC
+	.container
+		@include flex
+		height: 100%
+		align-items: center
+		justify-content: center	
+		.contact-content
+			width: 800px
+			height: 470px
+			@include flex
+			background: $white
+			align-items: center
+			@include round(10px)
+			justify-content: center	
+			.contact-form,
+			.contact-photo
+				height: 100%
+				text-align: left
+				@include article(6, $white, 0px, 0px)	
+			.contact-form
+				padding: 30px
+				text-align: center
+				border: 7px solid #B0E3F4	
+				h2
+					font-size: 35px
+					font-weight: 100
+					text-align: left
+					margin-bottom: 20px	
+				p
+					@include flex
+					font-size: 16px
+					font-weight: 300
+					text-align: left
+					align-items: center
+					padding-bottom: 10px
+					text-transform: capitalize
+					ion-icon
+						font-size: 1.5rem
+						margin-right: 10px
+				form
+					width: 100%
+					@include flex
+					margin-top: 20px
+					align-items: center
+					justify-content: space-between
+					input
+						border: none
+						color: $gray_text
+						@include round(7px)
+						text-transform: capitalize	
+						@include article(6, #B0E3F4, 10px, 5px)
+					textarea
+						border: none
+						height: 100px
+						color: $gray_text
+						@include round(7px)
+						@include article(12, #B0E3F4, 0px, 5px)
+						padding: 0px 5px
+					.btn-contact
+						width: 100%
+						text-align: center
+						margin-top: 10px
+						@include round(20px)	
+			.contact-photo		
+				padding: 20px
+				background: #B0E3F4		
+				img
+					width: 100%
+					height: 100%
