@@ -6,6 +6,7 @@
 				<p>new user? <a href="?file=sign-up">create account</a></p>
 				<form action="" method="">
 					<input type="email" name="" placeholder="username or email">
+					<a href="?file=forgot">Forgot password?</a>
 					<input type="password" name="" value="" placeholder="password">
 					<label for="box">
 						<input type="checkbox" id="box" name="" value="">

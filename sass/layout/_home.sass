@@ -119,9 +119,11 @@
 			font-weight: 100
 			margin-bottom: 40px	
 .login,
+.forgot,
 .sign-up
-	margin-top: 40px	
+	padding-top: 0px	
 .login,
+.forgot,
 .contact,
 .sign-up
 	width: 100%
@@ -133,6 +135,7 @@
 		align-items: center
 		justify-content: center	
 		.login-content,
+		.forgot-content,
 		.sign-up-content,
 		.contact-content
 			width: 800px
@@ -145,14 +148,17 @@
 			justify-content: center	
 			.login-form,
 			.login-photo,
+			.forgot-form,
 			.contact-form,
 			.sign-up-form,
+			.forgot-photo,
 			.sign-up-photo,
 			.contact-photo
 				height: 100%
 				text-align: left
 				@include article(6, $white, 0px, 0px)
-			.login-form,		
+			.login-form,
+			.forgot-form,		
 			.contact-form,
 			.sign-up-form
 				padding: 30px
@@ -182,6 +188,13 @@
 					@include flex
 					align-items: center
 					justify-content: space-between
+					a
+						width: 400%
+						color: $blue
+						font-size: 1rem
+						font-weight: 300
+						text-align: right
+						text-transform: capitalize
 					input
 						border: none
 						color: $gray_text
@@ -217,6 +230,15 @@
 						text-align: center
 						margin-top: 10px
 						@include round(20px)
+					.btn-forgot
+						padding: 0px
+						color: $white
+						@include flex
+						align-items: center
+						justify-content: center
+						@include round_content(40px, true)
+						ion-icon
+							font-size: 1.2rem	
 					h6
 						width: 100%
 						margin: 20px
@@ -249,7 +271,13 @@
 					input[type='password']
 						width: 100%	
 					.media
-						padding-top: 0px					
+						padding-top: 0px
+			.forgot-form
+				form
+					input
+						width: 83%	
+					a
+						font-size: 1.2rem								
 			.contact-photo		
 				@include background_image('Chatting.png')
 				background-size: 90%		
@@ -263,3 +291,12 @@
 				@include background_image('sign-up.png')
 				background-size: 90%
 				background-position: center center
+			.forgot-photo
+				@include background_image('forgot_password.png')
+				background-size: 90%
+				background-position: center center	
+		.forgot-content
+			height: 350px
+			.forgot-form
+				@include flex
+				align-items: center
