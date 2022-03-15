@@ -20,10 +20,11 @@
 				<a href="./" class="transition">home</a>
 				<a href="?file=about" class="transition">about</a>
 				<a href="?file=blog" class="transition">blog</a>
+				<div class="head-button">
+					<a href="?file=sign-up" class="btn btn_blue_out btn_big btn-sign-up">sign up</a>
+					<a href="?file=login" class="btn btn_blue btn_big btn-sign-in">sign in</a>
+				</div>
 			</nav>
-			<div class="head-button">
-				<!-- <a href="" class="btn btn_blue contact">contacto</a> -->
-			</div>
 		</div>
 	</header>
 

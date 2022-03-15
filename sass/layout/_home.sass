@@ -118,32 +118,45 @@
 			font-size: 16px
 			font-weight: 100
 			margin-bottom: 40px	
-.contact
+.login,
+.sign-up
+	margin-top: 40px	
+.login,
+.contact,
+.sign-up
 	width: 100%
-	height: 500px
+	height: 100vh
 	background: #EBF8FC
 	.container
 		@include flex
 		height: 100%
 		align-items: center
 		justify-content: center	
+		.login-content,
+		.sign-up-content,
 		.contact-content
 			width: 800px
-			height: 470px
+			height: 500px
 			@include flex
 			background: $white
+			box-shadow: $shadow
 			align-items: center
 			@include round(10px)
 			justify-content: center	
+			.login-form,
+			.login-photo,
 			.contact-form,
+			.sign-up-form,
+			.sign-up-photo,
 			.contact-photo
 				height: 100%
 				text-align: left
-				@include article(6, $white, 0px, 0px)	
-			.contact-form
+				@include article(6, $white, 0px, 0px)
+			.login-form,		
+			.contact-form,
+			.sign-up-form
 				padding: 30px
-				text-align: center
-				border: 7px solid #B0E3F4	
+				text-align: center	
 				h2
 					font-size: 35px
 					font-weight: 100
@@ -160,10 +173,13 @@
 					ion-icon
 						font-size: 1.5rem
 						margin-right: 10px
+					a
+						color: $blue
+						font-weight: 300	
+						margin-left: 10px
 				form
 					width: 100%
 					@include flex
-					margin-top: 20px
 					align-items: center
 					justify-content: space-between
 					input
@@ -172,6 +188,21 @@
 						@include round(7px)
 						text-transform: capitalize	
 						@include article(6, #B0E3F4, 10px, 5px)
+						padding: 15px
+					label
+						width: 100%
+						@include flex
+						flex-wrap: nowrap
+						align-items: center
+						justify-content: flex-start
+						input
+							width: 10%
+							display: inline-block
+						span
+							width: 90%
+							color: $gray_nav
+							text-align: left
+							font-size: 0.8rem
 					textarea
 						border: none
 						height: 100px
@@ -179,14 +210,56 @@
 						@include round(7px)
 						@include article(12, #B0E3F4, 0px, 5px)
 						padding: 0px 5px
-					.btn-contact
+					.btn-login,
+					.btn-contact,
+					.btn-sign-up
 						width: 100%
 						text-align: center
 						margin-top: 10px
-						@include round(20px)	
+						@include round(20px)
+					h6
+						width: 100%
+						margin: 20px
+						text-align: center
+						font-size: 1.2rem
+						font-weight: 300
+						text-transform: capitalize
+					.media
+						width: 100%
+						@include flex
+						align-items: center
+						padding: 20px 0px 25px 0px
+						justify-content: center
+						.icon
+							@include flex
+							color: $white
+							margin: 0px 5px
+							font-size: 1.5rem
+							background: #B0E3F4
+							align-items: center
+							justify-content: center
+							@include round_content(40px, true) 		
+			.login-form
+				form
+					input
+						width: 100%	
+			.sign-up-form
+				form
+					input[type='email'],
+					input[type='password']
+						width: 100%	
+					.media
+						padding-top: 0px					
 			.contact-photo		
-				padding: 20px
-				background: #B0E3F4		
-				img
-					width: 100%
-					height: 100%
+				@include background_image('Chatting.png')
+				background-size: 90%		
+				background-position: center center
+			.login-photo
+				padding: 40px
+				@include background_image('login.png')
+				background-size: 90%		
+				background-position: center center
+			.sign-up-photo		
+				@include background_image('sign-up.png')
+				background-size: 90%
+				background-position: center center

@@ -43,7 +43,7 @@
 		?>
 	</section>
 </div>	
-<section class="contact">
+<article class="contact">
 	<div class="container">
 		<div class="contact-content">
 			<div class="contact-form">
@@ -61,11 +61,10 @@
 				</form>
 			</div>
 			<div class="contact-photo">
-				<img src="assets/img/undraw_Personal.png" alt="">
 			</div>
 		</div>
 	</div>
-</section>
+</article>
 <div class="container">	
 	<section class="blog-container">
 		<h2>blog</h2>

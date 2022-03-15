@@ -39,10 +39,10 @@
 
 // background de imagens
 @mixin background_image($img)
-    background-size: 100% 100vh
     background-image: url('../img/#{$img}')        
+    background-size: cover
+    background-position: top
     background-repeat: no-repeat
-    background-position: cover
     
 // radius
 @mixin round($round)

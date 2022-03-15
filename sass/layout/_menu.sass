@@ -12,7 +12,6 @@
 		width: 100%
 	.container
 		@include flex
-		padding: 10px 0px
 		align-items: center
 		justify-content: space-between
 		@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
@@ -68,9 +67,12 @@
 				right: 36px
 				font-size: 3.5rem	
 	.nav
-		text-align: right
 		border: none
-		@include article(7, transparent, 0px, 10px)
+		@include flex
+		align-items: center
+		justify-content: flex-end
+		text-align: right
+		@include article(10, transparent, 0px, 10px)
 		a
 			padding: 5px 10px
 			text-transform: capitalize
@@ -107,30 +109,38 @@
 				padding: 10px 0px	
 				font-weight: 400
 				font-size: 1.1rem			
-	.head-button
-		text-align: right
-		@include article(3, transparent, 0px, 10px)
-		.contact
-			@include round(20px)
-			color: $white
-			font-weight: 400
-		@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
-			border: none	
-			position: absolute
-			top: 50vh
-			left: -100%		
-			@include article(12, blue, 0px, 0px)
-			padding: 20px
-			.contact
-				font-size: 1.8rem
-				padding: 20px 60px
-				@include round(100px)
-		@include breakpoint($breakpoint_xxsmall $breakpoint_xmedium)
-			.contact
-				font-size: 1.2rem
-				padding: 12px 25px	
-		@include breakpoint(0px $breakpoint_xxsmall)
-			padding: 10px	
-			.contact
+		.head-button
+			text-align: right
+			@include article(4, transparent, 0px, 10px)
+			.btn-sign-up,
+			.btn-sign-in
+				color: $white
+				font-weight: 300
 				font-size: 1rem
-				padding: 10px 16px		
+				margin: 0px 5px
+				padding: 7px 25px
+				@include round(20px)
+			.btn-sign-up
+				border: 2px solid $blue 
+				&:hover
+					border: 2px solid $blue_hover
+			@include breakpoint($breakpoint_xxsmall $breakpoint_huge)
+				border: none	
+				position: absolute
+				top: 50vh
+				left: -100%		
+				@include article(12, blue, 0px, 0px)
+				padding: 20px
+				.contact
+					font-size: 1.8rem
+					padding: 20px 60px
+					@include round(100px)
+			@include breakpoint($breakpoint_xxsmall $breakpoint_xmedium)
+				.contact
+					font-size: 1.2rem
+					padding: 12px 25px	
+			@include breakpoint(0px $breakpoint_xxsmall)
+				padding: 10px	
+				.contact
+					font-size: 1rem
+					padding: 10px 16px		
