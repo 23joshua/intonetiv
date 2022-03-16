@@ -120,12 +120,14 @@
 			margin-bottom: 40px	
 .login,
 .forgot,
-.sign-up
-	padding-top: 0px	
+.sign-up,
+.confirm-mail	
+	padding-top: 80px	
 .login,
 .forgot,
 .contact,
-.sign-up
+.sign-up,
+.confirm-mail	
 	width: 100%
 	height: 100vh
 	background: #EBF8FC
@@ -137,7 +139,8 @@
 		.login-content,
 		.forgot-content,
 		.sign-up-content,
-		.contact-content
+		.contact-content,
+		.confirm-mail-content
 			width: 800px
 			height: 500px
 			@include flex
@@ -153,14 +156,17 @@
 			.sign-up-form,
 			.forgot-photo,
 			.sign-up-photo,
-			.contact-photo
+			.contact-photo,
+			.confirm-mail-text,
+			.confirm-mail-photo
 				height: 100%
 				text-align: left
 				@include article(6, $white, 0px, 0px)
 			.login-form,
 			.forgot-form,		
 			.contact-form,
-			.sign-up-form
+			.sign-up-form,
+			.confirm-mail-text
 				padding: 30px
 				text-align: center	
 				h2
@@ -294,9 +300,15 @@
 			.forgot-photo
 				@include background_image('forgot_password.png')
 				background-size: 90%
+				background-position: center center
+			.confirm-mail-photo	
+				@include background_image('messenger.png')
+				background-size: 90%
 				background-position: center center	
-		.forgot-content
+		.forgot-content,
+		.confirm-mail-content
 			height: 350px
-			.forgot-form
+			.forgot-form,
+			.confirm-mail-text
 				@include flex
 				align-items: center

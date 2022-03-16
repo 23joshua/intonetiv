@@ -37,7 +37,7 @@
 			}elseif($file && file_exists(__DIR__ . "/views/{$file}.php")){
 				require __DIR__ . "/views/{$file}.php";
 			}else{
-				require __DIR__ . "/views/404.php";
+				require __DIR__ . "/views/page-not-found.php";
 			}
 
 		?>
