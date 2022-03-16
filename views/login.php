@@ -11,7 +11,7 @@
 					<label for="box">
 						<input type="checkbox" id="box" name="" value="">
 						<span>Keep me signed in</span></label>
-					<a href="" class="btn btn_big btn_blue transition btn-login">sign in</a>
+					<a href="" class="btn btn_big btn_blue transition btn-login">login</a>
 					<h6>or sign in with</span>
 					<div class="media">
 						<a href="" class="icon"><ion-icon name="logo-facebook"></ion-icon></a>

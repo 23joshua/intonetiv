@@ -9,7 +9,7 @@
 					<input type="text" name="" placeholder="last name">
 					<input type="email" name="" placeholder="username or email">
 					<input type="password" name="" value="" placeholder="password">
-					<a href="" class="btn btn_big btn_blue btn-sign-up transition">sign up</a>
+					<a href="" class="btn btn_big btn_blue btn-sign-up transition">register</a>
 					<h6>or sign in with</h6>
 					<div class="media">
 						<a href="" class="icon"><ion-icon name="logo-facebook"></ion-icon></a>
