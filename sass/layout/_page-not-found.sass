@@ -19,9 +19,13 @@
 			height: 300px
 			margin-bottom: 40px
 			@include background_image('page_not_found.png')
+			@include breakpoint(0px $breakpoint_xmedium)
+				width: 100%
 		.page-not-found-text
 			width: 500px
 			text-align: center
+			@include breakpoint(0px $breakpoint_xmedium)
+				width: 100%
 			h2
 				color: #333	 	
 				font-weight: 900

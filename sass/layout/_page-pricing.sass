@@ -14,6 +14,8 @@
 		font-weight: 100
 		font-size: 45px
 		margin: 40px auto 20px auto
+		@include breakpoint(0px $breakpoint_xmedium)
+			width: 100%
 	p
 		text-align: center
 		width: 100%
@@ -21,12 +23,16 @@
 		font-weight: 300
 		padding: 0px 20%
 		margin-bottom: 30px
+		@include breakpoint(0px $breakpoint_xmedium)
+			padding: 0px
 	.page-pricing-content
 		@include article(3, transparent, 0px, 10px)
 		.pricing,	
 		.pricing-list,
 		.pricing-title
 			text-align: center
+			padding: 20px
+			@include article(12, transparent, 20px, 0px)
 			h3
 				font-size: 30px
 				font-weight: 300
@@ -52,9 +58,14 @@
 				font-size: 18px
 				font-weight: 300
 				margin-bottom: 10px
+				font-family: $font_family
 				ion-icon
 					margin-right: 10px
 					font-size: 1.2rem
+		@include breakpoint($breakpoint_medium $breakpoint_huge)
+			@include article(6, transparent, 20px, 0px)
+		@include breakpoint(0px $breakpoint_xmedium)
+			@include article(12, transparent, 20px, 0px)	
 		.pricing
 			h3
 				margin-top: 0px			
@@ -80,6 +91,10 @@
 			text-align: center
 			@include article(2, transparent, 0px, 10px)
 			padding-bottom: 20px
+			@include breakpoint($breakpoint_medium $breakpoint_huge)
+				@include article(4, transparent, 20px, 0px)
+			@include breakpoint(0px $breakpoint_xmedium)
+				@include article(12, transparent, 20px, 0px)
 			h3
 				font-size: 30px
 				font-weight: 300
@@ -99,7 +114,9 @@
 			padding: 0px
 			p
 				text-align: left
-				font-size: 15px		
+				font-size: 15px	
+				@include breakpoint(0px $breakpoint_xmedium)
+					text-align: center	
 		.premium
 			background: $white		
 .pricing-about
@@ -107,23 +124,37 @@
 	height: 400px
 	@include flex
 	justify-content: space-between
+	@include breakpoint(0px $breakpoint_xmedium)
+		flex-direction: column
+		flex-wrap: wrap
+		height: 600px
 	.pricing-about-bg,
 	.pricing-about-title
 		height: 100%
 		@include article(6, transparent, 0px, 0px)
+		@include breakpoint(0px $breakpoint_xmedium)
+			@include article(12, transparent, 0px, 0px)
 	.pricing-about-bg
 		@include background_image('banner.jpg') 
 		background-position: center center
+		@include breakpoint(0px $breakpoint_xmedium)
+			height: 60%
 	.pricing-about-title
 		@include flex
 		text-align: center
 		align-items: center		
 		justify-content: center
 		padding: 70px
+		@include breakpoint(0px $breakpoint_xmedium)
+			height: 40%
+			padding: 30px
+			padding: 19px
 		h2
 			font-weight: 100
 			font-size: 35px
 			margin-bottom: -64px
+			@include breakpoint(0px $breakpoint_xmedium)
+				margin-bottom: 5px
 		p
 			font-size: 18px	
 			font-weight: 300
